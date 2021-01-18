@@ -1,24 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.css";
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
+import { Portafolio } from "./components/Portafolio";
+import { Resume } from "./components/Resume";
+import { Skills } from "./components/Skills";
+import { Testimonials } from "./components/Testimonials";
 
 function App() {
+  const [data, setData] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = () => {
+    setLoading(true);
+    fetch("data.json")
+      .then((res) => res.json())
+      .then((dataRes) => {
+        // console.log("data res ", dataRes);
+        setData({ ...dataRes });
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+
+        console.warn("no se pudo obtener la data ", error.message);
+      });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+
+      {loading ? (
+        <div id="preloader">
+          <div id="loader"></div>
+        </div>
+      ) : (
+        <span>
+          <Hero me={data.me} />
+          <About about={data.about} />
+          <Resume resumes={data.resume} />
+          <Skills skills={data.skills} />
+          <Portafolio portafolio={data.portafolio}  />
+          {/* <Testimonials /> */}
+          {/* <Contact /> */}
+          <Footer me={data.me} />
+        </span>
+      )}
+
+      
+    </>
   );
 }
 

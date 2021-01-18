@@ -1,0 +1,228 @@
+{
+    "me": {
+        "name": "Angel Fabricio González",
+        "description": "Software developer (backend and frontend)",
+        "socialNetworks": [
+            {
+                "name": "Facebook",
+                "icon": "fab fa-facebook-square",
+                "url": "https://www.facebook.com/profile.php?id=100047240373496"
+            },
+            {
+                "name": "Github",
+                "icon": "fab fa-github-square",
+                "url": "https://github.com/fabriciogonzalez06"
+            },
+            {
+                "name": "Linkedin",
+                "icon": "fab fa-linkedin",
+                "url": "https://www.linkedin.com/in/fabricio-gonzalez-622077147"
+            },
+            {
+                "name": "Twitter",
+                "icon": "fab fa-twitter-square",
+                "url": "https://twitter.com/angelfg06"
+            },
+            {
+                "name": "Instagram",
+                "icon": "fab fa-instagram",
+                "url": "https://www.instagram.com/angel_fabricio.dev"
+            }
+        ]
+    },
+    "about": {
+        "description": "Soy programador fullstack, tengo 1+ años de experiencia en el desarrollo de aplicaciones web, tanto en frontend, backend etc. me gusta el ambiente hibrído con flutter, me gusta aprender día a día y leer sobre temas de tecnología, en mís tiempos libres realizo ejercicio y me gusta jugar fútbol.",
+        "img": "images/perfil.jpeg",
+        "nombre": "Angel Fabricio González",
+        "ciudad": "Tegucigalpa FM, Honduras",
+        "celular": "+504 87876625",
+        "correo": "angelfabriciogonzalez@gmail.com"
+    },
+    "resume": [
+        {
+            "title": "Experiencia laboral",
+            "items": [
+                {
+                    "enterprise": "DEGT UNAH",
+                    "jobTitle": "Fullstack developer",
+                    "img": [
+                        "images/resumen/degt.png"
+                    ],
+                    "start": "Agosto, 2019",
+                    "end": "Actualidad",
+                    "description": "Desarrollo de aplicaciones web, creación de script y consultas en base de datos y procedimientos almacenados, construcción de API´s y consumo de las mismas desde angular, creación de script CI/CD jenkins y gitlab CI/CD. etc"
+                }
+            ]
+        },
+        {
+            "title": "Estudios",
+            "items": [
+                {
+                    "enterprise": "Instituto Santa Ana",
+                    "jobTitle": "Bachillerato tec. en computación.",
+                    "img": [],
+                    "start": "Enero, 2013",
+                    "end": "Diciembre, 2015",
+                    "description": "Estudiante de la carrera de bachillerato en computación en el Institudo Santa Ana, Santa Ana FM, Honduras"
+                },
+                {
+                    "enterprise": "Universidad Nacional Autónoma de Honduras",
+                    "jobTitle": "Lic. Informática Administrativa",
+                    "img": [],
+                    "start": "Enero, 2016",
+                    "end": "Marzo, 2021",
+                    "description": "Estudiante de la carrrera de Informática Administrativa en la Universidad Nacional Autónoma de Honduras, Tegucigalpa, Honduras."
+                }
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Html, css y Javascript",
+            "img": "images/skills/htmlcssjs.png"
+        },
+        {
+            "name": "Boostrap",
+            "img": "images/skills/bootstrap.png"
+        },
+        {
+            "name": "Angular +2",
+            "img": "images/skills/angular.jpg"
+        },
+        {
+            "name": "Nodejs",
+            "img": "images/skills/nodejs.png"
+        },
+        {
+            "name": "Expressjs",
+            "img": "images/skills/express.png"
+        },
+        {
+            "name": "Typescript",
+            "img": "images/skills/typescript.png"
+        },
+        {
+            "name": "Rxjs",
+            "img": "images/skills/rxjs.png"
+        },
+        {
+            "name": "NgRx",
+            "img": "images/skills/ngrx.png"
+        },
+        {
+            "name": "API REST",
+            "img": "images/skills/api.png"
+        },
+        {
+            "name": "C#",
+            "img": "images/skills/csharp.jpg"
+        },
+        {
+            "name": "Asp.net core web api",
+            "img": "images/skills/aspnetcore.png"
+        },
+        {
+            "name": "Sqlserver",
+            "img": "images/skills/sqlserver.png"
+        },
+        {
+            "name": "Mysql",
+            "img": "images/skills/mysql.png"
+        },
+        {
+            "name": "Mariadb",
+            "img": "images/skills/mariadb.png"
+        },
+        {
+            "name": "Firebase",
+            "img": "images/skills/firebase.png"
+        },
+        {
+            "name": "Docker",
+            "img": "images/skills/docker.png"
+        },
+        {
+            "name": "Git",
+            "img": "images/skills/git.png"
+        },
+        {
+            "name": "Unit Tests",
+            "img": "images/skills/unittests.png"
+        }
+    ],
+    "portafolio": [
+        {
+            "id": "paivoae",
+            "name": "PAI-VOAE UNAH",
+            "img": "images/trabajos/paivoae.jpg",
+            "description": "PAI-VOAE es una aplicación para encuestas para los estudiantes, que es  autoadministrada por los usuarios del sistema.",
+            "tech": [
+                "Angular 8",
+                "nodejs",
+                "Sqlserver",
+                "expressjs"
+            ]
+        },
+        {
+            "id": "gestionestudiantil",
+            "name": "Gestión Estudiantil",
+            "img": "images/trabajos/gestionestudiantil.jpg",
+            "description": "Gestión Estudiantil es un sistema dedicado a la preferencia de estudiantes con discapacidades o que pertenecen a un grupo cultural o deportes de la universidad. ",
+            "tech": [
+                "Angular 10",
+                "nodejs",
+                "Sqlserver",
+                "expressjs"
+            ]
+        },
+        {
+            "id": "sistemafinanciero",
+            "name": "Sistema Financiero",
+            "img": "images/trabajos/financiero.png",
+            "description": "Se realizó una migración de un sistema financiero de escritorio a la construción de las API's en el backend (C# asp.net core 3.0 web api)",
+            "tech": [
+                "C#",
+                "ASP.NET CORE 3.0 WEB API",
+                "SqlServer"
+            ]
+        },
+        {
+            "id": "recursoshumanos",
+            "name": "Sistema Recursos Humanos",
+            "img": "images/trabajos/recursoshumanos.jpg",
+            "description": "Se realizó una migración de un sistema de recursos humanos de escritorio a la construción de las API's en el backend (C# asp.net core 3.0 web api)",
+            "tech": [
+                "C#",
+                "ASP.NET CORE 3.0 WEB API",
+                "SqlServer"
+            ]
+        },
+        {
+            "id": "doxci",
+            "name": "DOCXI",
+            "img": "images/trabajos/docxi.jpg",
+            "description": "Docxi es una plataforma desarollada por ARSEDA para la atención, administración de pacientes en el area de salud. Brindando heramientas como ser chat, manejo de expedientes de los pacientes, registro usuarios, manejo de perfiles, reportes, notificaciones y administración de la información en la aplicación movil",
+            "tech": [
+                "Angular 10",
+                "Nodejs (Typescript)",
+                "Expressjs",
+                "MariaDB 10.4",
+                "Docker-Compose"
+            ]
+        },
+
+        {
+            "id": "avanza",
+            "name": "AVANZA",
+            "img": "images/trabajos/avanza.jpg",
+            "description": "es una aplicación para la gestión de créditos para la cooperativa AVANZA HONDURAS, gestión de usuarios, roles, permisos, gráficos, pagos, gestión de cuentas.",
+            "tech": [
+                "Angular 8",
+                "Nodejs (Typescript)",
+                "Expressjs",
+                "MariaDB 10.4",
+                "Docker-Compose"
+            ]
+        }
+    ]
+}
