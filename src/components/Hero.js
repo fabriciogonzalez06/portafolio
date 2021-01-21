@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { SocialNetwork } from "./SocialNetwork";
 
@@ -17,7 +17,7 @@ export const Hero = ({me} ) => {
             <div className="s-hero__content-about">
               <h1> {me?.name} </h1>
 
-              <h3>
+              <h3 >
                 {/* I'm a Manila based <span>graphic designer</span>,{" "}
                 <span>illustrator</span> and <span>webdesigner</span> creating
                 awesome and effective visual identities for companies of all

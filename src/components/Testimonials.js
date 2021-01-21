@@ -15,7 +15,7 @@ export const Testimonials= ()=>{
 
 <div className="row s-testimonials__content">
 
-    <div className="column">
+    {/* <div className="column">
 
         <div className="swiper-container testimonial-slider">
 
@@ -87,7 +87,7 @@ export const Testimonials= ()=>{
 
         </div> 
 
-    </div> 
+    </div>  */}
 
 </div> 
 

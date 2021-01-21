@@ -57,21 +57,22 @@
         {
             "title": "Estudios",
             "items": [
-                {
-                    "enterprise": "Instituto Santa Ana",
-                    "jobTitle": "Bachillerato tec. en computación.",
-                    "img": [],
-                    "start": "Enero, 2013",
-                    "end": "Diciembre, 2015",
-                    "description": "Estudiante de la carrera de bachillerato en computación en el Institudo Santa Ana, Santa Ana FM, Honduras"
-                },
+                
                 {
                     "enterprise": "Universidad Nacional Autónoma de Honduras",
                     "jobTitle": "Lic. Informática Administrativa",
-                    "img": [],
+                    "img": ["images/resumen/logounah.png"],
                     "start": "Enero, 2016",
                     "end": "Marzo, 2021",
                     "description": "Estudiante de la carrrera de Informática Administrativa en la Universidad Nacional Autónoma de Honduras, Tegucigalpa, Honduras."
+                },
+                {
+                    "enterprise": "Instituto Santa Ana",
+                    "jobTitle": "Bachillerato tec. en computación.",
+                    "img": ["images/resumen/isa.jfif"],
+                    "start": "Enero, 2013",
+                    "end": "Diciembre, 2015",
+                    "description": "Estudiante de la carrera de bachillerato en computación en el Institudo Santa Ana, Santa Ana FM, Honduras"
                 }
             ]
         }

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export const About = ({about}) => {
   return (
@@ -28,8 +29,8 @@ export const About = ({about}) => {
                   {about.nombre} <br />
                    {about.ciudad} <br />
                   {/* Mountain View, CA 94043 US <br /> */}
-                  <a href="tel:+1975432345"> {about.celular} </a> <br />
-                  <a href="mailto:#0"> {about.correo} </a>
+                   {about.celular}  <br />
+                 {about.correo} 
                 </p>
               </div>
               {/* <div className="column w-1000-stack">
@@ -45,3 +46,8 @@ export const About = ({about}) => {
     </>
   );
 };
+
+
+About.prototype={
+  about:PropTypes.object.isRequired
+}

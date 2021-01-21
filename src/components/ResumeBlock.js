@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
 export const ResumeBlock = ({ items }) => {
 
@@ -22,7 +23,7 @@ export const ResumeBlock = ({ items }) => {
 
           {
               item.img.map((img,i)=>(
-                 <img src={img}  key={i} />
+                 <img src={img}  key={i} alt={item.jobTitle} />
               ))
           }
 
@@ -31,3 +32,7 @@ export const ResumeBlock = ({ items }) => {
     </>
   );
 };
+
+ResumeBlock.prototype={
+  items:PropTypes.object.isRequired
+}

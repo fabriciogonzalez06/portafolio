@@ -3447,7 +3447,8 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/header-bg-3000.jpg);
+    /* background-image: url(../images/header-bg-3000.jpg); */
+    background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3961,8 +3962,10 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .s-portfolio {
     background-color: var(--color-gray-1);
-    padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-5);
+    /* padding-top: calc(6 * var(--space)); */
+    /* padding-bottom: var(--vspace-5); */
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .s-portfolio h3 {

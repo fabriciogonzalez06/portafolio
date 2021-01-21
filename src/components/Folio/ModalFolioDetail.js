@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 export const ModalFolioDetail = ({folioDetail}) => {
     return (
@@ -27,4 +28,8 @@ export const ModalFolioDetail = ({folioDetail}) => {
       </div>
 
     )
+}
+
+ModalFolioDetail.prototype={
+  folioDetail:PropTypes.object.isRequired
 }

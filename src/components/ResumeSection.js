@@ -1,5 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { ResumeBlock } from "./ResumeBlock";
+
 
 export const ResumeSection = ({resume}) => {
   return (
@@ -13,3 +15,8 @@ export const ResumeSection = ({resume}) => {
     </div>
   );
 };
+
+
+ResumeSection.prototype={
+  resume:PropTypes.object.isRequired
+}

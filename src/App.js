@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
+import ReactGA from 'react-ga';
 import "./App.css";
 import { About } from "./components/About";
-import { Contact } from "./components/Contact";
+// import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Portafolio } from "./components/Portafolio";
 import { Resume } from "./components/Resume";
 import { Skills } from "./components/Skills";
-import { Testimonials } from "./components/Testimonials";
+// import { Testimonials } from "./components/Testimonials";
 
 function App() {
   const [data, setData] = useState({});
@@ -16,6 +17,8 @@ function App() {
 
   useEffect(() => {
     getData();
+    ReactGA.initialize('UA-187780735-1');
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   const getData = () => {

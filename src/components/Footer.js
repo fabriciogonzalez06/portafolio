@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import Jump from "jump.js";
+import PropTypes from 'prop-types';
+
+import { ssBackToTop, ssSmoothScroll } from "../utils/utils";
 
 export const Footer = ({ me }) => {
   useEffect(() => {
@@ -7,38 +9,7 @@ export const Footer = ({ me }) => {
     ssBackToTop();
   }, []);
 
-  const ssSmoothScroll = function () {
-    const triggers = document.querySelectorAll(".smoothscroll");
-
-    triggers.forEach(function (trigger) {
-      trigger.addEventListener("click", function () {
-        const target = trigger.getAttribute("href");
-
-        Jump(target, {
-          duration: 1200,
-        });
-      });
-    });
-  };
-
-  const ssBackToTop = function () {
-    const pxShow = 900;
-    const goTopButton = document.querySelector(".ss-go-top");
-
-    if (!goTopButton) return;
-
-    // Show or hide the button
-    if (window.scrollY >= pxShow) goTopButton.classList.add("link-is-visible");
-
-    window.addEventListener("scroll", function () {
-      if (window.scrollY >= pxShow) {
-        if (!goTopButton.classList.contains("link-is-visible"))
-          goTopButton.classList.add("link-is-visible");
-      } else {
-        goTopButton.classList.remove("link-is-visible");
-      }
-    });
-  }; //
+ 
 
   return (
     <>
@@ -76,3 +47,7 @@ export const Footer = ({ me }) => {
     </>
   );
 };
+
+Footer.prototype={
+  me:PropTypes.object.isRequired
+}
