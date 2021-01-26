@@ -6,6 +6,7 @@ import { About } from "./components/About";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { NewTechologies } from "./components/newTechologies";
 import { Portafolio } from "./components/Portafolio";
 import { Resume } from "./components/Resume";
 import { Skills } from "./components/Skills";
@@ -51,6 +52,7 @@ function App() {
           <About about={data.about} />
           <Resume resumes={data.resume} />
           <Skills skills={data.skills} />
+          <NewTechologies  data={data.studying} />
           <Portafolio portafolio={data.portafolio}  />
           {/* <Testimonials /> */}
           {/* <Contact /> */}

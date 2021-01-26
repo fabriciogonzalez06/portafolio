@@ -27,6 +27,11 @@
                 "name": "Instagram",
                 "icon": "fab fa-instagram",
                 "url": "https://www.instagram.com/angel_fabricio.dev"
+            },
+            {
+                "name": "Skype",
+                "icon": "fab fa-skype",
+                "url": "skype:angelfabriciogonzalez"
             }
         ]
     },
@@ -149,6 +154,20 @@
         {
             "name": "Unit Tests",
             "img": "images/skills/unittests.png"
+        }
+    ],
+    "studying": [
+        {
+            "name": "Reactjs",
+            "img": "images/estudiando/react.png"
+        },
+        {
+            "name": "Go",
+            "img": "images/estudiando/go.png"
+        },
+        {
+            "name": "Postgresql",
+            "img": "images/estudiando/postgresql.svg"
         }
     ],
     "portafolio": [

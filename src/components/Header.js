@@ -37,6 +37,11 @@ export const Header = () => {
                 </a>
               </li>
               <li>
+                <a className="smoothscroll" href="#newTech" onClick={toogleMenuAction} >
+                  Estudiando
+                </a>
+              </li>
+              <li>
                 <a className="smoothscroll" href="#portfolio" onClick={toogleMenuAction}>
                   Portafolio
                 </a>
