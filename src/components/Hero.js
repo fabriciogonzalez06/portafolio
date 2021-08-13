@@ -1,11 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SocialNetwork } from "./SocialNetwork";
+//import { SocialNetwork } from "./SocialNetwork";
 
-export const Hero = ({me} ) => {
-
-
-
+export const Hero = ({ me }) => {
 
   return (
     <>
@@ -39,11 +36,10 @@ export const Hero = ({me} ) => {
                 .
               </h3>
 
-                <SocialNetwork socialNetworks={me?.socialNetworks} />
-                
+              {/* <SocialNetwork socialNetworks={me?.socialNetworks} /> */}
+
             </div>
 
-            
           </div>
         </div>
 
@@ -55,7 +51,7 @@ export const Hero = ({me} ) => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                // style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"
+              // style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"
               >
                 <path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path>
               </svg>
@@ -69,5 +65,5 @@ export const Hero = ({me} ) => {
 };
 
 Hero.propTypes = {
-  me:PropTypes.object.isRequired
+  me: PropTypes.object.isRequired
 };

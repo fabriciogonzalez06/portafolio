@@ -1,70 +1,57 @@
 import React from "react";
 
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import CssBaseline from '@material-ui/core/CssBaseline';
+// import Box from '@material-ui/core/Box';
+// import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles';
 
-// import "./../../index.css";
+import HideOnScroll from "./HideAppbar";
 
-export const Header = () => {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    //backgroundColor: 'transparent'
+  },
+  toolbar: {
+    minHeight: 100,
+    alignItems: 'center',
+    //flexDirection: 'row',
+    // [theme.breakpoints.up('xs')]:{
+    //   flexDirection: 'column'
+    // },
 
-  const toogleMenuAction=()=>{
-    document.querySelector('body').classList.toggle('menu-is-open');
-    document.querySelector('a.s-header__menu-toggle').classList.toggle('is-clicked')
+    justifyContent: 'center',
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(2)
+  },
+  toolbarItems: {
+    margin: '0 5px',
+    cursor: 'pointer', 
+    //color: 'black'
   }
+}));
 
+export default function HideAppBar(props) {
+
+  const classes = useStyles();
   return (
-   <>
-          <header className="s-header">
-        <div className="row s-header__nav-wrap">
-          <nav className="s-header__nav">
-            <ul>
-              <li className="current">
-                <a className="smoothscroll" href="#hero">
-                  Inicio
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#about" onClick={toogleMenuAction}>
-                  Sobre Mí
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#resume" onClick={toogleMenuAction} >
-                  Resumen
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#skills" onClick={toogleMenuAction} >
-                  Habilidades
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#newTech" onClick={toogleMenuAction} >
-                  Estudiando
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#portfolio" onClick={toogleMenuAction}>
-                  Portafolio
-                </a>
-              </li>
-              {/* <li>
-                <a className="smoothscroll" href="#testimonials" onClick={toogleMenuAction}>
-                  Testimonios
-                </a>
-              </li> */}
-              {/* <li>
-                <a className="smoothscroll" href="#contact" onClick={toogleMenuAction}>
-                  Saluda
-                </a>
-              </li> */}
-            </ul>
-          </nav>
-        </div>
-
-        <a className="s-header__menu-toggle " onClick={toogleMenuAction} href="#0" title="Menu">
-          <span className="s-header__menu-icon"></span>
-        </a>
-      </header>
-
-   </>
+    <React.Fragment>
+      <CssBaseline />
+      <HideOnScroll {...props}>
+        <AppBar className={classes.root} >
+          <Toolbar className={classes.toolbar} >
+            <Typography className={classes.toolbarItems} >Inicio</Typography>
+            <Typography className={classes.toolbarItems} >Resumen</Typography>
+            <Typography className={classes.toolbarItems} >Habilidades</Typography>
+            <Typography className={classes.toolbarItems} >Estudiando</Typography>
+            <Typography className={classes.toolbarItems} >Portafolio</Typography>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
+      <Toolbar />
+    </React.Fragment>
   );
-};
+}
