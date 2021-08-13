@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-export const About = ({about}) => {
+export const About = ({ about }) => {
   return (
     <>
       <section id="about" className="s-about target-section">
@@ -27,10 +27,10 @@ export const About = ({about}) => {
 
                 <p>
                   {about.nombre} <br />
-                   {about.ciudad} <br />
+                  {about.ciudad} <br />
                   {/* Mountain View, CA 94043 US <br /> */}
-                   {about.celular}  <br />
-                 {about.correo} 
+                  {about.celular}  <br />
+                  {about.correo}
                 </p>
               </div>
               {/* <div className="column w-1000-stack">
@@ -47,7 +47,6 @@ export const About = ({about}) => {
   );
 };
 
-
-About.prototype={
-  about:PropTypes.object.isRequired
+About.prototype = {
+  about: PropTypes.object.isRequired
 }
